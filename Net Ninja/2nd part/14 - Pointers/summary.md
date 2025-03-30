@@ -1,0 +1,3 @@
+By passing pointers as arguments, you can access and modify the original underlying data within functions. When a pointer argument is passed into a function, Go makes a copy of the pointer, but the copy still points to the original memory location. When the pointer is dereferenced, the original value is updated
+
+Передавая указатели в качестве аргументов, вы можете получать доступ и изменять исходные базовые данные внутри функций. Когда аргумент-указатель передается в функцию, Go создает копию указателя, но копия по-прежнему указывает на исходное место в памяти. При разыменовании указателя исходное значение обновляется
