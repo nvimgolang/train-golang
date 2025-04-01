@@ -14,9 +14,12 @@ type bill struct {
 // make new bills
 func newBill(name string) bill {
 	b := bill{
-		name:  name,
-		items: map[string]float64{},
-		tip:   0,
+		name: name,
+		items: map[string]float64{
+			"pie":       5.59,
+			"ice cream": 4.88,
+		},
+		tip: 0,
 	}
 
 	return b
@@ -33,6 +36,8 @@ func (b bill) format() string {
 		total += v
 	}
 
-	// totol
-	fs += fmt.Sprintf("%v ...$0.2f", "total: ", total)
+	// total
+	fs += fmt.Sprintf("%v ...$%0.2f", "total: ", total)
+
+	return fs
 }
